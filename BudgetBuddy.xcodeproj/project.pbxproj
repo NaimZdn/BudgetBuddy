@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0871BE3929D7213A007055DE /* FinanceTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE3829D7213A007055DE /* FinanceTrackerApp.swift */; };
-		0871BE3B29D7213A007055DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE3A29D7213A007055DE /* ContentView.swift */; };
+		0871BE3929D7213A007055DE /* BudgetBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */; };
+		0871BE3B29D7213A007055DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE3A29D7213A007055DE /* HomeView.swift */; };
 		0871BE3D29D7213C007055DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0871BE3C29D7213C007055DE /* Assets.xcassets */; };
 		0871BE4029D7213C007055DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0871BE3F29D7213C007055DE /* Preview Assets.xcassets */; };
+		0871BE4729D726DB007055DE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE4629D726DB007055DE /* Color.swift */; };
+		087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087E32BC29DB1163008ABE98 /* PreviewData.swift */; };
+		08FB3CE929D881E800DEDB10 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3CE829D881E800DEDB10 /* Account.swift */; };
+		08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0871BE3529D7213A007055DE /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0871BE3829D7213A007055DE /* FinanceTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTrackerApp.swift; sourceTree = "<group>"; };
-		0871BE3A29D7213A007055DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0871BE3529D7213A007055DE /* BudgetBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetBuddyApp.swift; sourceTree = "<group>"; };
+		0871BE3A29D7213A007055DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0871BE3C29D7213C007055DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0871BE3F29D7213C007055DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0871BE4629D726DB007055DE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		087E32BC29DB1163008ABE98 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		08FB3CE829D881E800DEDB10 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +43,7 @@
 		0871BE2C29D7213A007055DE = {
 			isa = PBXGroup;
 			children = (
-				0871BE3729D7213A007055DE /* FinanceTracker */,
+				0871BE3729D7213A007055DE /* BudgetBuddy */,
 				0871BE3629D7213A007055DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +51,24 @@
 		0871BE3629D7213A007055DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0871BE3529D7213A007055DE /* FinanceTracker.app */,
+				0871BE3529D7213A007055DE /* BudgetBuddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0871BE3729D7213A007055DE /* FinanceTracker */ = {
+		0871BE3729D7213A007055DE /* BudgetBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				0871BE3829D7213A007055DE /* FinanceTrackerApp.swift */,
-				0871BE3A29D7213A007055DE /* ContentView.swift */,
+				0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */,
+				0871BE3A29D7213A007055DE /* HomeView.swift */,
+				087E32BC29DB1163008ABE98 /* PreviewData.swift */,
+				08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */,
+				08FB3CE829D881E800DEDB10 /* Account.swift */,
+				0871BE4629D726DB007055DE /* Color.swift */,
 				0871BE3C29D7213C007055DE /* Assets.xcassets */,
 				0871BE3E29D7213C007055DE /* Preview Content */,
 			);
-			path = FinanceTracker;
+			path = BudgetBuddy;
 			sourceTree = "<group>";
 		};
 		0871BE3E29D7213C007055DE /* Preview Content */ = {
@@ -70,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0871BE3429D7213A007055DE /* FinanceTracker */ = {
+		0871BE3429D7213A007055DE /* BudgetBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0871BE4329D7213C007055DE /* Build configuration list for PBXNativeTarget "FinanceTracker" */;
+			buildConfigurationList = 0871BE4329D7213C007055DE /* Build configuration list for PBXNativeTarget "BudgetBuddy" */;
 			buildPhases = (
 				0871BE3129D7213A007055DE /* Sources */,
 				0871BE3229D7213A007055DE /* Frameworks */,
@@ -82,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = FinanceTracker;
+			name = BudgetBuddy;
 			productName = FinanceTracker;
-			productReference = 0871BE3529D7213A007055DE /* FinanceTracker.app */;
+			productReference = 0871BE3529D7213A007055DE /* BudgetBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0871BE3029D7213A007055DE /* Build configuration list for PBXProject "FinanceTracker" */;
+			buildConfigurationList = 0871BE3029D7213A007055DE /* Build configuration list for PBXProject "BudgetBuddy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0871BE3429D7213A007055DE /* FinanceTracker */,
+				0871BE3429D7213A007055DE /* BudgetBuddy */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0871BE3B29D7213A007055DE /* ContentView.swift in Sources */,
-				0871BE3929D7213A007055DE /* FinanceTrackerApp.swift in Sources */,
+				08FB3CE929D881E800DEDB10 /* Account.swift in Sources */,
+				0871BE3B29D7213A007055DE /* HomeView.swift in Sources */,
+				087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */,
+				08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */,
+				0871BE3929D7213A007055DE /* BudgetBuddyApp.swift in Sources */,
+				0871BE4729D726DB007055DE /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,20 +282,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FinanceTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = MC9L8ULM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Formation.FinanceTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = Formation.BudgetBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,20 +310,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FinanceTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = MC9L8ULM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Formation.FinanceTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = Formation.BudgetBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0871BE3029D7213A007055DE /* Build configuration list for PBXProject "FinanceTracker" */ = {
+		0871BE3029D7213A007055DE /* Build configuration list for PBXProject "BudgetBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0871BE4129D7213C007055DE /* Debug */,
@@ -327,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0871BE4329D7213C007055DE /* Build configuration list for PBXNativeTarget "FinanceTracker" */ = {
+		0871BE4329D7213C007055DE /* Build configuration list for PBXNativeTarget "BudgetBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0871BE4429D7213C007055DE /* Debug */,
