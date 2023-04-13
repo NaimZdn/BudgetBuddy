@@ -13,6 +13,8 @@
 		0871BE4029D7213C007055DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0871BE3F29D7213C007055DE /* Preview Assets.xcassets */; };
 		0871BE4729D726DB007055DE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871BE4629D726DB007055DE /* Color.swift */; };
 		087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087E32BC29DB1163008ABE98 /* PreviewData.swift */; };
+		088CD12129E7FEC50007A742 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12029E7FEC50007A742 /* Currency.swift */; };
+		088CD12329E802270007A742 /* CurrencySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12229E802270007A742 /* CurrencySelector.swift */; };
 		08FB3CE929D881E800DEDB10 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3CE829D881E800DEDB10 /* Account.swift */; };
 		08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,8 @@
 		0871BE3F29D7213C007055DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0871BE4629D726DB007055DE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		087E32BC29DB1163008ABE98 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		088CD12029E7FEC50007A742 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		088CD12229E802270007A742 /* CurrencySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelector.swift; sourceTree = "<group>"; };
 		08FB3CE829D881E800DEDB10 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,8 @@
 			children = (
 				0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */,
 				0871BE3A29D7213A007055DE /* HomeView.swift */,
+				088CD12029E7FEC50007A742 /* Currency.swift */,
+				088CD12229E802270007A742 /* CurrencySelector.swift */,
 				087E32BC29DB1163008ABE98 /* PreviewData.swift */,
 				08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */,
 				08FB3CE829D881E800DEDB10 /* Account.swift */,
@@ -154,6 +160,8 @@
 				087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */,
 				08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */,
 				0871BE3929D7213A007055DE /* BudgetBuddyApp.swift in Sources */,
+				088CD12329E802270007A742 /* CurrencySelector.swift in Sources */,
+				088CD12129E7FEC50007A742 /* Currency.swift in Sources */,
 				0871BE4729D726DB007055DE /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
