@@ -15,7 +15,7 @@ struct AccountCreationView: View {
         HStack{
             TextField("Ex : 200€", text: $amount)
                 .padding(10)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 5)
                 .keyboardType(.numbersAndPunctuation)
                 .submitLabel(.done)
             CurrencySelector()
