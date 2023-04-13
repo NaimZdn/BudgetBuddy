@@ -42,8 +42,11 @@ struct AccountCell: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background(Color.white)
-        .cornerRadius(16)
+        .background(Color.white,
+                    in: RoundedRectangle(
+                        cornerRadius: 20,
+                        style: .continuous))
+        
     }
 }
 
