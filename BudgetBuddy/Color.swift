@@ -19,8 +19,9 @@ extension Color {
         )
     }
     public static let backgroundColor = Color(hex: 0xEBE7E4)
+    public static let primaryColor = Color(hex: 0xBDBDF4)
+    public static let secondaryColor = Color(hex: 0xBFBDF4)
     public static let tertiaryColor = Color(hex: 0xFED0AB)
     
-    public static let primaryColor = Color(hex: 0xBDBDF4)
     public static let footnoteColor = Color(hex: 0x00000, alpha: 0.7)
 }
