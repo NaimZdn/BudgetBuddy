@@ -11,7 +11,7 @@ struct CurrencySelector: View {
     
     private let currencies = Currency.allCases
     
-    @State private var selectedCurrency: Currency = .euro
+    @Binding var selectedCurrency: Currency
     @State private var isSelectedMode = false
     
     var body: some View {
@@ -37,7 +37,9 @@ struct CurrencySelector: View {
 }
 
 struct CurrencySelector_Previews: PreviewProvider {
+    
+    @State static var previewSelectedCurrency = Currency.euro
     static var previews: some View {
-        CurrencySelector()
+        CurrencySelector(selectedCurrency: $previewSelectedCurrency)
     }
 }
