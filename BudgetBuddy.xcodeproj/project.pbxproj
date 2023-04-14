@@ -16,6 +16,7 @@
 		088CD12129E7FEC50007A742 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12029E7FEC50007A742 /* Currency.swift */; };
 		088CD12329E802270007A742 /* CurrencySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12229E802270007A742 /* CurrencySelector.swift */; };
 		088CD12529E81E660007A742 /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12429E81E660007A742 /* AccountCreationView.swift */; };
+		08AD084D29E92C55006624FF /* IconSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD084C29E92C55006624FF /* IconSelector.swift */; };
 		08FB3CE929D881E800DEDB10 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3CE829D881E800DEDB10 /* Account.swift */; };
 		08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		088CD12029E7FEC50007A742 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		088CD12229E802270007A742 /* CurrencySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelector.swift; sourceTree = "<group>"; };
 		088CD12429E81E660007A742 /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
+		08AD084C29E92C55006624FF /* IconSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelector.swift; sourceTree = "<group>"; };
 		08FB3CE829D881E800DEDB10 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,17 +67,10 @@
 		0871BE3729D7213A007055DE /* BudgetBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */,
-				0871BE3A29D7213A007055DE /* HomeView.swift */,
-				088CD12029E7FEC50007A742 /* Currency.swift */,
-				088CD12229E802270007A742 /* CurrencySelector.swift */,
-				088CD12429E81E660007A742 /* AccountCreationView.swift */,
-				087E32BC29DB1163008ABE98 /* PreviewData.swift */,
-				08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */,
-				08FB3CE829D881E800DEDB10 /* Account.swift */,
-				0871BE4629D726DB007055DE /* Color.swift */,
-				0871BE3C29D7213C007055DE /* Assets.xcassets */,
-				0871BE3E29D7213C007055DE /* Preview Content */,
+				08AD085B29E9307E006624FF /* Application */,
+				08AD085C29E930A5006624FF /* Presentation */,
+				08AD086029E937B3006624FF /* Domain */,
+				08AD084E29E92C74006624FF /* Extensions */,
 			);
 			path = BudgetBuddy;
 			sourceTree = "<group>";
@@ -86,6 +81,102 @@
 				0871BE3F29D7213C007055DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08AD084E29E92C74006624FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0871BE4629D726DB007055DE /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08AD085029E92D2A006624FF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				08AD085F29E9314A006624FF /* View */,
+				08AD085129E92D48006624FF /* Components */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		08AD085129E92D48006624FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				088CD12229E802270007A742 /* CurrencySelector.swift */,
+				08AD084C29E92C55006624FF /* IconSelector.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		08AD085329E92DD3006624FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08AD085D29E930CD006624FF /* View */,
+				08AD085529E92DF1006624FF /* Components */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08AD085529E92DF1006624FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		08AD085B29E9307E006624FF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0871BE3829D7213A007055DE /* BudgetBuddyApp.swift */,
+				0871BE3C29D7213C007055DE /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		08AD085C29E930A5006624FF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				08AD085329E92DD3006624FF /* Home */,
+				08AD085029E92D2A006624FF /* Account */,
+				0871BE3E29D7213C007055DE /* Preview Content */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		08AD085D29E930CD006624FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0871BE3A29D7213A007055DE /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08AD085F29E9314A006624FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				088CD12429E81E660007A742 /* AccountCreationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08AD086029E937B3006624FF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				08AD086129E937C4006624FF /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		08AD086129E937C4006624FF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				08FB3CE829D881E800DEDB10 /* Account.swift */,
+				088CD12029E7FEC50007A742 /* Currency.swift */,
+				087E32BC29DB1163008ABE98 /* PreviewData.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +254,7 @@
 				0871BE3B29D7213A007055DE /* HomeView.swift in Sources */,
 				087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */,
 				08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */,
+				08AD084D29E92C55006624FF /* IconSelector.swift in Sources */,
 				0871BE3929D7213A007055DE /* BudgetBuddyApp.swift in Sources */,
 				088CD12329E802270007A742 /* CurrencySelector.swift in Sources */,
 				088CD12129E7FEC50007A742 /* Currency.swift in Sources */,
@@ -294,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = MC9L8ULM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,7 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetBuddy/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = MC9L8ULM7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
