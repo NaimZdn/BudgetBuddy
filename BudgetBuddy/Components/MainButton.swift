@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct MainButton: View {
+    
+    let title: String
+    let action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            action()
+        } label: {
+            Text(title)
+                .font(.headline)
+                .foregroundColor(Color.white)
+                .padding(15)
+                .frame(maxWidth: .infinity)
+                .background(Color.black, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        }
     }
 }
 
 struct MainButton_Previews: PreviewProvider {
     static var previews: some View {
-        MainButton()
+        MainButton(title: "Preview Button", action: {
+            print("Hello world !")
+        })
     }
 }
