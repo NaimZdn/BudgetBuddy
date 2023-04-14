@@ -17,6 +17,8 @@
 		088CD12329E802270007A742 /* CurrencySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12229E802270007A742 /* CurrencySelector.swift */; };
 		088CD12529E81E660007A742 /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12429E81E660007A742 /* AccountCreationView.swift */; };
 		08AD084D29E92C55006624FF /* IconSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD084C29E92C55006624FF /* IconSelector.swift */; };
+		08AD086429E954A7006624FF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD086329E954A7006624FF /* MainButton.swift */; };
+		08AD086829E975D5006624FF /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD086729E975D5006624FF /* AccentButton.swift */; };
 		08FB3CE929D881E800DEDB10 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3CE829D881E800DEDB10 /* Account.swift */; };
 		08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		088CD12229E802270007A742 /* CurrencySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelector.swift; sourceTree = "<group>"; };
 		088CD12429E81E660007A742 /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
 		08AD084C29E92C55006624FF /* IconSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelector.swift; sourceTree = "<group>"; };
+		08AD086329E954A7006624FF /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		08AD086729E975D5006624FF /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
 		08FB3CE829D881E800DEDB10 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,7 @@
 			children = (
 				08AD085B29E9307E006624FF /* Application */,
 				08AD085C29E930A5006624FF /* Presentation */,
+				08AD086629E954D1006624FF /* Components */,
 				08AD086029E937B3006624FF /* Domain */,
 				08AD084E29E92C74006624FF /* Extensions */,
 			);
@@ -179,6 +184,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		08AD086629E954D1006624FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				08AD086329E954A7006624FF /* MainButton.swift */,
+				08AD086729E975D5006624FF /* AccentButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,10 +266,12 @@
 				08FB3CE929D881E800DEDB10 /* Account.swift in Sources */,
 				088CD12529E81E660007A742 /* AccountCreationView.swift in Sources */,
 				0871BE3B29D7213A007055DE /* HomeView.swift in Sources */,
+				08AD086829E975D5006624FF /* AccentButton.swift in Sources */,
 				087E32BD29DB1163008ABE98 /* PreviewData.swift in Sources */,
 				08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */,
 				08AD084D29E92C55006624FF /* IconSelector.swift in Sources */,
 				0871BE3929D7213A007055DE /* BudgetBuddyApp.swift in Sources */,
+				08AD086429E954A7006624FF /* MainButton.swift in Sources */,
 				088CD12329E802270007A742 /* CurrencySelector.swift in Sources */,
 				088CD12129E7FEC50007A742 /* Currency.swift in Sources */,
 				0871BE4729D726DB007055DE /* Color.swift in Sources */,

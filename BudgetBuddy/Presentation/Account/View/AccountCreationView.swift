@@ -25,10 +25,22 @@ struct AccountCreationView: View {
                 Text("Solde : \(String(format: "%.2f", Float(amount) ?? 0))")
                     .font(.system(size: 17, weight: .light))
                     .foregroundColor(Color.footnoteColor)
+            }
+            .padding(.bottom, 20)
+            
+            VStack(alignment: .leading) {
+                Text("Nom")
+                    .font(.title2)
+                    .bold()
                 
+                TextField("Ex : AmericanExpress", text: $accountName)
+                    .submitLabel(.done)
+                    .padding(15)
+                    .background(Color.white, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
                 
             }
-        
+            .padding(.bottom, 20)
+
             VStack(alignment: .leading) {
                 Text("Icône")
                     .font(.title2)
@@ -36,6 +48,7 @@ struct AccountCreationView: View {
                 IconSelector(selectedIcon: $selectedIcon)
             }
             .padding(.bottom, 20)
+            
             VStack(alignment: .leading) {
                 Text("Solde initial")
                     .font(.title2)
@@ -51,6 +64,10 @@ struct AccountCreationView: View {
                         .padding(10)
                 }
                 .background(Color.white, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            }
+            Spacer()
+            MainButton(title: "Créer") {
+                
             }
         }
         .padding()

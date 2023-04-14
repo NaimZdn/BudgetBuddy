@@ -2,6 +2,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var isPresentedNewAccountScreen = false
+    
     var body: some View {
         ScrollView{
             VStack(spacing: 32) {
@@ -10,6 +13,11 @@ struct HomeView: View {
                     Text("\(String(format: "%.2F", previewAccount.map {$0.amount}.reduce(0, +))) €")
                         .font(.system(size: 32, weight: .bold))
                 }
+                
+                AccentButton(title: "+ account", color: Color.tertiaryColor) {
+                    isPresentedNewAccountScreen = true
+                }
+                
                 VStack (alignment: .leading){
                     Text("Mes comptes")
                         .font(.title2)
@@ -31,6 +39,9 @@ struct HomeView: View {
             .padding(24)
         }
         .background(Color.backgroundColor)
+        .sheet(isPresented: $isPresentedNewAccountScreen) {
+            AccountCreationView()
+        }
         
     }
 }
