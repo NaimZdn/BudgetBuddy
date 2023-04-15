@@ -9,10 +9,12 @@ import SwiftUI
 
 struct AccountCreationView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @State private var accountName: String = ""
     @State private var amount: String = ""
     @State private var selectedCurrency: Currency = .euro
     @State private var selectedIcon: String = "americanExpress"
+    var onAccountCreated: (Account) -> Void
     
     var body: some View {
         VStack {
@@ -67,6 +69,12 @@ struct AccountCreationView: View {
             }
             Spacer()
             MainButton(title: "Créer") {
+                let newAccount = Account(iconName: selectedIcon,
+                                         name: accountName,
+                                         amount: Double(Float(amount) ?? 0.0))
+                onAccountCreated(newAccount)
+                presentationMode.wrappedValue.dismiss()
+                
                 
             }
         }
@@ -77,6 +85,6 @@ struct AccountCreationView: View {
 
 struct AccountCreationView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountCreationView()
+        AccountCreationView(onAccountCreated: {_ in return })
     }
 }
