@@ -32,7 +32,7 @@ struct TransactionCell_: View {
         .padding(.horizontal, 20)
         .padding(.vertical, 15)
         .background(Color.white, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-        .padding()
+
     }
         
 }
@@ -40,6 +40,7 @@ struct TransactionCell_: View {
 struct TransactionCell__Previews: PreviewProvider {
     static var previews: some View {
         TransactionCell_(transaction: previewTransaction[0])
+            .padding()
             .background(Color.backgroundColor)
             .previewLayout(.sizeThatFits)
     }

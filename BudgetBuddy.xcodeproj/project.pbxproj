@@ -22,6 +22,7 @@
 		08AD086C29EA8A31006624FF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD086B29EA8A31006624FF /* Transaction.swift */; };
 		08AD087129EA8AF8006624FF /* TransactionCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD087029EA8AF8006624FF /* TransactionCell .swift */; };
 		08AD087329EA8B32006624FF /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD087229EA8B31006624FF /* PreviewData.swift */; };
+		08AD087729EA9E3D006624FF /* TransactionsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD087629EA9E3D006624FF /* TransactionsDetailsView.swift */; };
 		08FB3CE929D881E800DEDB10 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB3CE829D881E800DEDB10 /* Account.swift */; };
 		08FF66DE29D84A9E00BA6A97 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		08AD086B29EA8A31006624FF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		08AD087029EA8AF8006624FF /* TransactionCell .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionCell .swift"; sourceTree = "<group>"; };
 		08AD087229EA8B31006624FF /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		08AD087629EA9E3D006624FF /* TransactionsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsDetailsView.swift; sourceTree = "<group>"; };
 		08FB3CE829D881E800DEDB10 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		08FF66DD29D84A9E00BA6A97 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 		08AD086E29EA8ABD006624FF /* View  */ = {
 			isa = PBXGroup;
 			children = (
+				08AD087629EA9E3D006624FF /* TransactionsDetailsView.swift */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				08FB3CE929D881E800DEDB10 /* Account.swift in Sources */,
 				08AD087129EA8AF8006624FF /* TransactionCell .swift in Sources */,
+				08AD087729EA9E3D006624FF /* TransactionsDetailsView.swift in Sources */,
 				088CD12529E81E660007A742 /* AccountCreationView.swift in Sources */,
 				0871BE3B29D7213A007055DE /* HomeView.swift in Sources */,
 				08AD086829E975D5006624FF /* AccentButton.swift in Sources */,
