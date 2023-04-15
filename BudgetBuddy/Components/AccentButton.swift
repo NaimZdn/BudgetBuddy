@@ -21,7 +21,7 @@ struct AccentButton: View {
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
                 .padding(10)
-                .background(Color.tertiaryColor, in: RoundedRectangle(cornerRadius: 15))
+                .background(color, in: RoundedRectangle(cornerRadius: 15))
             
         }
 
