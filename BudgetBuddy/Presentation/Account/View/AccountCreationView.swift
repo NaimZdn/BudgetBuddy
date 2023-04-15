@@ -42,7 +42,7 @@ struct AccountCreationView: View {
                 
             }
             .padding(.bottom, 20)
-
+            
             VStack(alignment: .leading) {
                 Text("Icône")
                     .font(.title2)
@@ -71,7 +71,9 @@ struct AccountCreationView: View {
             MainButton(title: "Créer") {
                 let newAccount = Account(iconName: selectedIcon,
                                          name: accountName,
-                                         amount: Double(Float(amount) ?? 0.0))
+                                         initialAmount: Double(Float(amount) ?? 0.0),
+                                         transactions: [],
+                                         currency: selectedCurrency)
                 onAccountCreated(newAccount)
                 presentationMode.wrappedValue.dismiss()
                 

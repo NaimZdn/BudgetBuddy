@@ -11,6 +11,11 @@ struct Account: Identifiable {
     let id = UUID()
     let iconName: String
     let name: String
-    let amount: Double
+    let initialAmount: Double
+    let transactions: [Transaction]
+    let currency: Currency
+    var amount: Double {
+        initialAmount + transactions.map {$0.amount}.reduce(0, +)
+    }
     
 }

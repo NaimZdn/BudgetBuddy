@@ -23,7 +23,7 @@ struct AccountCell: View {
                 Text(account.name)
                     .font(.headline)
                     .foregroundColor(.primary)
-                Text("Solde : \(String(format: "%.2f", account.amount)) $")
+                Text("Solde : \(String(format: "%.2f", account.initialAmount)) $")
                     .font(.footnote)
                     .foregroundColor(Color.footnoteColor)
     
@@ -52,7 +52,7 @@ struct AccountCell: View {
 
 struct AccountCell_Previews: PreviewProvider {
     
-    static let previewAccount = (Account(iconName: "icon_paypal", name: "Paypal", amount: 123.89))
+    static let previewAccount = (Account(iconName: "icon_paypal", name: "Paypal", initialAmount: 123.89, transactions: previewTransaction, currency: .euro))
     
     
     static var previews: some View {
