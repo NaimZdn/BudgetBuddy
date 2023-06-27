@@ -15,6 +15,7 @@
 		088CD12129E7FEC50007A742 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12029E7FEC50007A742 /* Currency.swift */; };
 		088CD12329E802270007A742 /* CurrencySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12229E802270007A742 /* CurrencySelector.swift */; };
 		088CD12529E81E660007A742 /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CD12429E81E660007A742 /* AccountCreationView.swift */; };
+		088F80212A4AD39E0019897E /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F80202A4AD39E0019897E /* AccountDetailView.swift */; };
 		08AD084D29E92C55006624FF /* IconSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD084C29E92C55006624FF /* IconSelector.swift */; };
 		08AD086429E954A7006624FF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD086329E954A7006624FF /* MainButton.swift */; };
 		08AD086829E975D5006624FF /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD086729E975D5006624FF /* AccentButton.swift */; };
@@ -37,6 +38,7 @@
 		088CD12029E7FEC50007A742 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		088CD12229E802270007A742 /* CurrencySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelector.swift; sourceTree = "<group>"; };
 		088CD12429E81E660007A742 /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
+		088F80202A4AD39E0019897E /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		08AD084C29E92C55006624FF /* IconSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelector.swift; sourceTree = "<group>"; };
 		08AD086329E954A7006624FF /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		08AD086729E975D5006624FF /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 				0871BE3F29D7213C007055DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		088F801F2A4AD3180019897E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				088F80202A4AD39E0019897E /* AccountDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		08AD084E29E92C74006624FF /* Extensions */ = {
@@ -154,6 +164,7 @@
 				08AD085329E92DD3006624FF /* Home */,
 				08AD085029E92D2A006624FF /* Account */,
 				08AD086D29EA8AAF006624FF /* Transaction */,
+				088F801F2A4AD3180019897E /* Detail */,
 				0871BE3E29D7213C007055DE /* Preview Content */,
 			);
 			path = Presentation;
@@ -314,6 +325,7 @@
 				088CD12329E802270007A742 /* CurrencySelector.swift in Sources */,
 				088CD12129E7FEC50007A742 /* Currency.swift in Sources */,
 				08AD086A29EA770D006624FF /* AccountList.swift in Sources */,
+				088F80212A4AD39E0019897E /* AccountDetailView.swift in Sources */,
 				0871BE4729D726DB007055DE /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
