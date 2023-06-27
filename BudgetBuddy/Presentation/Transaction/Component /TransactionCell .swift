@@ -1,5 +1,5 @@
 //
-//  TransactionCell .swift
+//  TransactionCell.swift
 //  BudgetBuddy
 //
 //  Created by Zidouni on 15/04/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TransactionCell_: View {
+struct TransactionCell: View {
     
     let transaction: Transaction
     
@@ -37,9 +37,9 @@ struct TransactionCell_: View {
         
 }
 
-struct TransactionCell__Previews: PreviewProvider {
+struct TransactionCell_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionCell_(transaction: previewTransaction[0])
+        TransactionCell(transaction: previewTransaction[0])
             .padding()
             .background(Color.backgroundColor)
             .previewLayout(.sizeThatFits)

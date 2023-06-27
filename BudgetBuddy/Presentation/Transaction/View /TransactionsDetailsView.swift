@@ -35,7 +35,7 @@ struct TransactionsDetailsView: View {
                                 .foregroundColor(Color.footnoteColor)
                         }
                         ForEach(account.transactions) { transaction in
-                            TransactionCell_(transaction: transaction)
+                            TransactionCell(transaction: transaction)
                         }
                     }
                 }
@@ -52,6 +52,6 @@ struct TransactionsDetailsView: View {
 
 struct TransactionsDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionsDetailsView(account: previewAccount[0])
+        TransactionsDetailsView(account: previewAccounts[0])
     }
 }
